@@ -263,13 +263,15 @@ h3 {
 .uaeInfo ul li {
     width: 100%;
     margin: 0px;
-    padding: 7px 0px;
+    padding: 2% 1%;
 }
 
 .uaeInfo ul li span {
     font-size: 18px;
     line-height: 22px;
     width: 100%;
+    padding-top: 10%;
+    text-shadow: 1px 1px 2px #000;
 }
 
 @media (max-width: 767px) {
@@ -1041,4 +1043,10 @@ h3 {
 }
 .owl-controls{
     margin-left: 45%;
+}
+
+    @media (min-width: 1200px){
+.main-container {
+    max-width: 1140px !important;
+}
 }

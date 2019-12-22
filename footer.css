@@ -51,4 +51,18 @@
     text-align: center;
     
     font-size: 3em;
+    padding: 2%;
+ }
+ .above-footer{
+    text-align: center;
+   float: none;
+    align-items: center;
+ }
+ .above-footer .row{
+   margin: 20px auto;
+   display: block;
+ }
+ .above-footer .button-large {
+   float: none;
+   padding: 10px;
  }
