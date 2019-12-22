@@ -1,0 +1,54 @@
+.footer {
+    padding: 2rem 0 2rem;
+    background: #B88C35 url('https://media.istockphoto.com/vectors/dubai-skyline-silhouette-black-vector-id821318144') no-repeat center top;
+    position: relative;
+    background-size: cover;
+    color: #ffffff;
+ }
+ 
+ .footer:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(184, 140, 53, 0.95);
+ }
+ 
+ .footer a {
+    color: #ffffff;
+ }
+ 
+ .footer .textwidget ul.list-unstyled li {
+    display: block;
+    padding: .5rem 0;
+ }
+ 
+ .footer .textwidget ul.list-unstyled li a {
+    color: #ffffff;
+ }
+ 
+ .sub-footer {
+    background-color: #434242;
+    font-size: 13px;
+ }
+ 
+ .sub-footer p {
+    margin-bottom: 0;
+ }
+ 
+ .sub-footer a {
+    color: #FEA912;
+ }
+ 
+ @media (min-width: 992px) {
+    .sub-footer {
+       font-size: 14px;
+    }
+ }
+ .uaeInfo h3 { margin: 0 auto;
+    text-align: center;
+    
+    font-size: 3em;
+ }
