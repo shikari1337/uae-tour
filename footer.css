@@ -1,9 +1,57 @@
+*{
+   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
+}
+ .footer-main a, .footer-main  article, .footer-main  aside, .footer-main  details,  .footer-main div, .footer-main  figcaption, .footer-main  figure, .footer-main  footer, .footer-main  h1,  .footer-main h2, .footer-main  h3,  .footer-main h4,  .footer-main h5, .footer-main  h6,  .footer-main hgroup, .footer-main  input,  .footer-main li, .footer-main  p,  .footer-main section,  .footer-main span, .footer-main  ul {
+    float: none;
+ }
+ .col-xl-6 {
+   flex: 0 0 50%;
+   max-width: 50%;
+}
+
+.order-md-3 {
+   order: 3;
+}
+.order-md-1 {
+   order: 1;
+}
+.order-md-2 {
+   order: 2;
+   
+}
+.col-xl-3 {
+   flex: 0 0 25%;
+   max-width: 25%;
+}
+img{
+   max-width: 100%;
+}
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+   position: relative;
+   width: 100%;
+   padding-right: 15px;
+   padding-left: 15px;
+}
 .footer {
     padding: 2rem 0 2rem;
     background: #B88C35 url('https://media.istockphoto.com/vectors/dubai-skyline-silhouette-black-vector-id821318144') no-repeat center top;
     position: relative;
     background-size: cover;
     color: #ffffff;
+ }
+ .footer-main{
+    width: 100%;
+    margin: 0 auto;
+
+ }
+
+ .footer-main section{
+   width: 100%;
+   float : none;
+ }
+ .footer-main .textwidget  {
+    float: none;
+    text-align: left;
  }
  
  .footer:before {
@@ -13,15 +61,36 @@
     bottom: 0;
     left: 0;
     right: 0;
+    float : none;
     background-color: rgba(184, 140, 53, 0.95);
  }
- 
+ .footer-main .container{
+   position: relative;
+   float : none;
+   margin: 0 auto;
+
+ }
+ .footer-main .col-sm-6 {
+    float: none;
+ }
+ .footer-main .container{
+   margin:0 auto;
+
+   width: 1170px;
+ }
+ .footer-main .row{
+   display: flex;
+   flex-wrap: nowrap;
+   width: 1170px;
+   float: none;
+ }
  .footer a {
     color: #ffffff;
  }
  
  .footer .textwidget ul.list-unstyled li {
     display: block;
+    float : none;
     padding: .5rem 0;
  }
  
@@ -32,10 +101,13 @@
  .sub-footer {
     background-color: #434242;
     font-size: 13px;
+    float : none;
  }
  
  .sub-footer p {
     margin-bottom: 0;
+    text-align: center;
+    float : none;
  }
  
  .sub-footer a {
@@ -65,4 +137,114 @@
  .above-footer .button-large {
    float: none;
    padding: 10px;
+ }section {
+   width: 100%;
  }
+ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+   display: block;
+ }
+ .pt-3, .py-3 {
+   padding-top: 1rem;
+ }
+ .pb-3, .py-3 {
+   padding-bottom: 1rem;
+ }
+ .text-center {
+   text-align: center;
+ }
+ .sub-footer[_ngcontent-c3] {
+   background-color: rgb(67, 66, 66);
+   font-size: 13px;
+ }
+ .container {
+   width: 100%;
+   padding-right: 15px;
+   padding-left: 15px;
+   margin-right: auto;
+   margin-left: auto;
+ }
+ .text-light {
+   color: rgb(248, 249, 250);
+ }
+ dl, ol, p, ul {
+   margin-top: 0px;
+   margin-bottom: 1rem;
+ }
+ .sub-footer[_ngcontent-c3] p[_ngcontent-c3] {
+   margin-bottom: 0px;}
+   .mt-3, .my-3 {
+      margin-top: 1rem!important;
+  }
+.footer-main p {
+   margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+  .footer h5{
+   font-size: 1.25rem;
+   margin-bottom: .5rem;
+   font-weight: 500;
+   line-height: 1.2;
+  }
+   .footer[_ngcontent-c3] {
+      padding-top: 2rem;
+      padding-right: 0px;
+      padding-bottom: 2rem;
+      padding-left: 0px;
+      background-image: url("https://media.istockphoto.com/vectors/dubai-skyline-silhouette-black-vector-id821318144");
+      background-position-x: center;
+      background-position-y: top;
+      background-size: cover;
+      background-repeat-x: no-repeat;
+      background-repeat-y: no-repeat;
+      background-attachment: initial;
+      background-origin: initial;
+      background-clip: initial;
+      background-color: rgb(184, 140, 53);
+      position: relative;
+      color: rgb(255, 255, 255);
+    }
+    .footer[_ngcontent-c3]::before {
+      content: "";
+      position: absolute;
+      top: 0px;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+      background-color: rgba(184, 140, 53, 0.95);
+    }
+ 
+    .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+      position: relative;
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  
+  
+ 
+    .img-fluid {
+      max-width: 100%;
+      height: auto;
+    }
+    .mb-3, .my-3 {
+      margin-bottom: 1rem;
+    }
+    .list-inline, .list-unstyled {
+      padding-left: 0px;
+      list-style-position: initial;
+      list-style-image: initial;
+      list-style-type: none;
+    }
+    .text-capitalize {
+      text-transform: capitalize;
+    }
+    .footer[_ngcontent-c3] .textwidget[_ngcontent-c3] ul.list-unstyled[_ngcontent-c3] li[_ngcontent-c3] {
+      display: block;
+      padding-top: 0.5rem;
+      padding-right: 0px;
+      padding-bottom: 0.5rem;
+      padding-left: 0px;
+    }
+    .footer[_ngcontent-c3] .textwidget[_ngcontent-c3] ul.list-unstyled[_ngcontent-c3] li[_ngcontent-c3] a[_ngcontent-c3] {
+      color: rgb(255, 255, 255);
+    }
