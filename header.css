@@ -10,16 +10,33 @@ header{
   font-size: .95em!important;
 }
 #top-header{
-    width: 100% !important ;
+   width : 100% !important ;
     display: flex;
     height: 90px;
+    overflow: hidden;
    
 }
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+.container{
+  max-width: 1140;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
 .navbar-nav{
+  display: flex;
   flex-direction: row;
 }
 #main-nav{
-  width: 100%; 
+ width : 100%; 
 }
 .navbar-brand {
   display: inline-block;
@@ -29,8 +46,7 @@ header{
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
-  width: 100%;
-}
+  }
 .navbar.navbar-light {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16) !important ;
     background-color: #fff !important ;
@@ -41,14 +57,16 @@ header{
   
   @media (max-width: 992px) {
     .container {
-      max-width: 960px;
+      max-width: 90% !important;
     }
   }
   
 
-  
+  .navbar-toggler{
+    display: none;
+  }
   .navbar.navbar-light .logo {
-    width: 200px  ;
+   width : 200px  ;
     transition: all 0.5s !important ;
     -moz-transition: all 0.5s !important ;
     -ms-transition: all 0.5s !important ;
@@ -59,18 +77,26 @@ header{
   
   @media (min-width: 1366px) {
     .navbar.navbar-light .logo {
-      width: 250px  ;
+     width : 250px  ;
     }
   }
   
+  .navbar-toggler {
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
   .navbar.navbar-light .logo.fixed-logo {
-    /* width: 110px !important ; */
-    width: 180px !important ;
+    /*max-width : 110px !important ; */
+   width : 180px !important ;
   }
   
   @media (min-width: 1366px) {
     .navbar.navbar-light .logo.fixed-logo {
-      width: 210px !important ;
+     width : 210px !important ;
     }
   }
   
@@ -95,7 +121,7 @@ header{
     padding: 1rem 0.5rem !important ;
     display: flex !important ;
     flex-wrap: wrap !important ;
-    align-items: center!important !important ;
+    align-items: center!important ;
   }
   
   .navbar.navbar-light .nav-item .nav-link:hover, .navbar.navbar-light .nav-item .nav-link:focus, .navbar.navbar-light .nav-item .nav-link.active {
@@ -132,4 +158,33 @@ header{
 
 .ml-auto, .mx-auto {
   margin-left: auto!important;
+}
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  content: "";
+  background: center center/100% 100% no-repeat;}
+  
+
+  .navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+}
+
+.navbar .container{
+  justify-content: space-between;
+}
+  .navbar.navbar-light[_ngcontent-c1] {
+    box-shadow: 0 2px 5px rgba(0,0,0,.16);
+    background-color: #fff;
+    transition: all .4s;
 }

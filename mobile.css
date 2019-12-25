@@ -1,0 +1,90 @@
+@media  (max-width:800px){
+    .navbar-toggler{
+        display: block !important;
+    }
+  
+    
+    
+  #top-header{
+    height: auto !important;
+  }
+  #top-header .main-container{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer-main .footer .row{
+    flex-direction : column;
+    
+  }
+  .footer-main .footer .row .col-md-3{
+    width : 100% !important;
+    
+  }
+  .col-xl-3,.col-xl-6  {
+    max-width : 100%;
+      
+  }
+  .order-md-2 {
+      order: 3;
+  }
+  #top-header .container {
+    padding: 0px !important;
+  }
+  .navbar-collapse{
+    flex-basis: 100%;
+      flex-grow: 1;
+    align-items: center;
+  
+  }
+  .navbar-nav{
+    flex-direction: column;
+    /* margin-top: 70px; */
+    width: 100%;
+  }
+ 
+  .mob-nav {
+    display: none !important;
+  }
+  .city-card-inner{
+    flex-direction: column;
+  }
+  
+  .city-card-inner .column-four ,  .city-card-inner .column-six{
+    width : 100% !important;
+  }
+
+  .city-card .pl {
+    font-size: 16px;
+}
+
+.img-right {
+  flex-direction: column-reverse;;
+}
+.uaeInfo {
+  width: 100% !important;
+  margin: 0px 0px 10px !important;
+  padding: 0px  !important;
+}
+
+.uaeInfo ul li {
+    width: 100%;
+    margin: 0px;
+    padding: 3%;
+}
+.uaeInfo ul {
+  flex-direction: column;
+}
+.uaeInfo ul li span{
+  padding-top: 1%;
+}
+.navbar-nav {
+  line-height: 1;
+  margin-inline-start: 0px !important;
+  margin-inline-end: 0px !important;
+   padding-inline-start: 0px !important;
+}
+.sticky .navbar-nav {
+  line-height: 1 !important;
+}
+
+}

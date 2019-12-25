@@ -4,8 +4,17 @@
  .footer-main a, .footer-main  article, .footer-main  aside, .footer-main  details,  .footer-main div, .footer-main  figcaption, .footer-main  figure, .footer-main  footer, .footer-main  h1,  .footer-main h2, .footer-main  h3,  .footer-main h4,  .footer-main h5, .footer-main  h6,  .footer-main hgroup, .footer-main  input,  .footer-main li, .footer-main  p,  .footer-main section,  .footer-main span, .footer-main  ul {
     float: none;
  }
+
+.footer-main .container, .row{
+  max-width : 100%;
+  
+}
+.footer-main .row{
+    display : flex;
+    flex-flow:row;
+}
+
  .col-xl-6 {
-   flex: 0 0 50%;
    max-width: 50%;
 }
 
@@ -20,7 +29,6 @@
    
 }
 .col-xl-3 {
-   flex: 0 0 25%;
    max-width: 25%;
 }
 img{
@@ -76,12 +84,12 @@ img{
  .footer-main .container{
    margin:0 auto;
 
-   width: 1170px;
+   max-width: 1140px;
  }
  .footer-main .row{
    display: flex;
    flex-wrap: nowrap;
-   width: 1170px;
+   max-width: 100%;
    float: none;
  }
  .footer a {
@@ -157,9 +165,8 @@ img{
    font-size: 13px;
  }
  .container {
-   width: 100%;
-   padding-right: 15px;
-   padding-left: 15px;
+   max-width: 100%;
+
    margin-right: auto;
    margin-left: auto;
  }

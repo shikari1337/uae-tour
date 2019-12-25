@@ -3,21 +3,29 @@
 <head>
     <title>UAE-Visa.org | Tourism</title>
     <link rel='stylesheet' href="footer.css" type="text/css" >
-    <link rel='stylesheet'  href="header.css" type="text/css" > 
-    <link rel='stylesheet'  href="style.css" type="text/css" >
-    <!-- <link rel='stylesheet'  href="styles.css" type="text/css" > -->
-    <link rel="stylesheet" href="https://daneden.github.io/animate.css/animate.min.css"  type="text/css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.css" rel="stylesheet">
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js"></script>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
 
+    <link rel='stylesheet'  href="header.css" type="text/css" > 
+    <!-- <link rel='stylesheet'  href="style.css" type="text/css" > -->
+    <link rel='stylesheet'  href="mobile.css" type="text/css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet'  href="styles.css" type="text/css" >
+    <link rel="stylesheet" href="https://daneden.github.io/animate.css/animate.min.css"  type="text/css">
+
+    <link rel="stylesheet" href="./assest/slider/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assest/slider/dist/assets/owl.theme.default.min.css">
 <script src="https://skinqure.in/best-skin-specialist/js/wow.min.js"></script>
               <script>
               new WOW().init();
               </script>
 
 <style>
+ 
+  /* slider */
+</style>
+<style>
+
+  
       #top-header{
         margin: 0 auto;
         float: none;
@@ -29,7 +37,7 @@
     height: 70px !important;
   }
   .sticky img{
-    width: 180px !important   ;
+    max-width : 180px !important   ;
     vertical-align: middle;
     margin-top: 0.5em
   }
@@ -40,6 +48,7 @@
           <div class=" container main-container" style="
   margin: 0 auto;
   display: flex;
+  overflow: hidden;
 ">
             <a class="navbar-brand" style="
   float: none;
@@ -47,14 +56,12 @@
               <img class="logo" src="https://uae-visa.org/assets/images/logo.png" alt="logo">
             </a>
             <!-- /logo -->
-          
+            <button class="navbar-toggler" type="button" onclick="toggleMenu()"><span  class="navbar-toggler-icon"></span></button>
             <!-- /toggler -->
-            <div class=" navbar-collapse" id="main-nav" style="
+            <div class=" navbar-collapse  mob-nav" id="main-nav" style="
    float:none;
 ">
-              <ul class="navbar-nav ml-auto" style="
-  space: 0%;
-">
+              <ul class="navbar-nav ml-auto" >
                 <li class="nav-item">
                   <a class="nav-link">Home</a>
                 </li>
@@ -71,23 +78,50 @@
             </div>
             <!-- / navbar-collapse -->
           </div>
-        </container>
          </nav>
         </header> 
         <!--<header _ngcontent-c0="" _nghost-c1="" class="header-main"><nav _ngcontent-c1="" class="navbar navbar-expand-md py-md-0 fixed-top navbar-light" id="top-header"><div _ngcontent-c1="" class="container"><a _ngcontent-c1="" class="navbar-brand"><img _ngcontent-c1="" alt="logo" class="logo " src="https://uae-visa.org/assets/images/logo.png"></a><!-- <button _ngcontent-c1="" class="navbar-toggler" type="button"><span _ngcontent-c1="" class="navbar-toggler-icon"></span></button><div _ngcontent-c1="" class="navbar-collapse collapse" id="main-nav"><ul _ngcontent-c1="" class="navbar-nav ml-auto"><li _ngcontent-c1="" class="nav-item"><a _ngcontent-c1="" class="nav-link">Home</a></li><li _ngcontent-c1="" class="nav-item"><a _ngcontent-c1="" class="nav-link">Track Application </a></li><li _ngcontent-c1="" class="nav-item"><a _ngcontent-c1="" class="nav-link">About us</a></li><li _ngcontent-c1="" class="nav-item"><a _ngcontent-c1="" class="nav-link">Contact Us </a></li></ul></div></div></nav></header>
  -->
         <div class=" row body-panel">
+          <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+            
+              <img src="https://www.keyonehomes.com/blog/wp-content/uploads/2018/09/B6_KH-image-1200x600.jpg" style="width :100%">
+             
+            </div>
           
-          <div id="owl-demo" class="owl-carousel owl-theme">
- 
-            <div class=" item"><img src="https://www.keyonehomes.com/blog/wp-content/uploads/2018/09/B6_KH-image-1200x600.jpg" alt="The Last of us"></div>
-            <div class=" item"><img src="https://www.perfectyachtcharter.com/wp-content/uploads/2017/11/shutterstock_516817831-1200x600.jpg" alt="GTA V"></div>
-            <div class=" item"><img src="https://martinkenney.com/wp-content/uploads/2019/03/dubai-cityscape-with-burj-al-arab-jumeirah-unitedarab-emirates-uae-1200x600.jpg" alt="Mirror Edge"></div>
+            <div class="mySlides fade">
+              
+              <img src="https://www.perfectyachtcharter.com/wp-content/uploads/2017/11/shutterstock_516817831-1200x600.jpg" style="width :100%">
+              
+            </div>
+          
+            <div class="mySlides fade">
            
+              <img src="https://martinkenney.com/wp-content/uploads/2019/03/dubai-cityscape-with-burj-al-arab-jumeirah-unitedarab-emirates-uae-1200x600.jpg" style="width :100%">
+             
+            </div>
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
           </div>
+          <br>
+          
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+          
+          <div class="container" >
           <div class=" wrap pos-Reltv">
           <section class="row">   
-          <h1 class="row alignFromCenter font-Weight-Normal titleFont upperCase">Tourism in United Arab Emirates(UAE)</h1>
+            <div class="uppertext">
+                       <h1 class="row alignFromCenter font-Weight-Normal titleFont upperCase" >Tourism in United Arab Emirates(UAE)</h1>
         <!--  <div class=" row marginFromTop mobImgfull-width"><img src="https://www.instadubaivisa.com/images/uae-tourism.jpg" title="" alt="" class="" width="1170" height="200"></div>-->
           <h2 class="row alignFromCenter font-Weight-Normal titleFont paddingAll black borderFromBottom marginFromBottom">A federation of seven emirates<div class=" container paddingAllExtra"></div></h2>
           <div class=" row content">
@@ -96,16 +130,23 @@
           <p style="text-align: center;">The seven UAE emirates is a myriad of rich civilization and religious beliefs. It’s surreal architecture, well-maintained forts and artistic museums make UAE, a land of infinite opportunities to explore. Every emirate has its own unique identity which is irresistible for travellers. UAE tourism has taken a leap in the last decade making it one of the world's hottest destinations to visit.</p>
           
           <p style="text-align: center;">UAE Tourism has a wide range of choices to offer to the curious onlookers. The following emirates of UAE are waiting to welcome you:</p>
+
+          </div>
           <!--<a><button class="apply-button">Apply For UAE Visa</button></a> -->
           <div  class="city-card">
           <h3 class="row font-Weight-Normal marginFromBottom green borderFromBottom paddingFromBottom"><strong class="black">Dubai   </strong><br/><span>- An emirate of innovative wonders</span></h3>
-          
-          <div class=" column-four mobImgfull-width marginFromBottom paddingFromBottom"><img src="https://www.instadubaivisa.com/images/dubai.jpg" title="" alt="" class="wow fadeInUp  " width="100%" height=""></div>
-          <div class=" column-six paddingFromRight mobpadding-0">
+          <div class="city-card-inner img-left"> 
+          <div class=" column-four mobImgfull-width marginFromBottom paddingFromBottom city-img wow fadeInUp"><div id="owl-demo" class="owl-carousel owl-theme">
+ 
+            <div class=" item" style="width:100%"><img src="./img/dubai1.jpg" alt="The Last of us"></div>
+            <div class=" item"><img src="./img/dubai2.jpg" alt="GTA V"></div>
+        
+          </div></div>
+          <div class=" column-six paddingFromRight mobpadding-0   city-text">
           <p class="pl wow fadeInUp  ">Dubai is the most famous state or emirate of UAE. The skyline of Dubai maps out the unrealistic achievements of this cosmopolitan. From shopping to beach activities to adventurous tasks to blooming flowers in the desert, you and your family are sure to have a spectacular holiday.  Dubai roars with luxury anthems. And at the same time it has abundant opportunities for budget travellers. The Jumeriah Mosque is the most photographed mosque in Dubai. Dancing Fountains, Burj Khalifa, Burj Al-Arab, The Dubai Mall, The Miracle Garden, IMG World of Adventures and Legoland are a few of the pit stops that Dubai has to offer. The local food with secret recipes and experienced hands makes one get lost onto the frames of sand dunes. A perfect network of local transportation and international flights makes this city contagious to visit.</p>
           <a><button class="apply-button wow fadeInUp  ">Apply For Dubai Visa </button></a>
         </div>
-       
+      </div>
         
           
           </div>
@@ -113,77 +154,106 @@
      
           <h3 class="row font-Weight-Normal marginFromBottom green borderFromBottom paddingFromBottom wow fadeInUp   "><strong class="black">Abu Dhabi  </strong><br/><span>- A maze of culture, deserts and contemporary architectonics</span></h3>
           
-
-          <div class=" column-six paddingFromRight mobpadding-0 wow fadeInUp  ">
+          <div class="city-card-inner img-right">
+          <div class=" column-six paddingFromRight mobpadding-0 wow fadeInUp   city-text ">
           <p class="pr">Abu Dhabi is booming with visitors. Embellished with extravagant resorts, celestial escapes, herons on mangroves and unrealistic museums, Abu Dhabi has a class edge to its identity. The pristine Emirates Palace is one of the world most expensive hotels and you don’t have to rent their suites to experience the perfect artistic workmanship. Heritage Village is a perfect cultural visit. The most complex bridge ever constructed, Sheikh Zayed Bridge is a sight to behold. The iconic Ferrari World offers roller coaster rides with Ferrari concept evoking the real world of sports cars. To enjoy a little slow-paced metropolitan visit, Abu Dhabi is the ultimate.</p>
           
 <a><button class="apply-button  wow fadeInUp  ">Apply For Abu Dhabi Visa</button></a>   
      </div>
-     <div class=" column-four mobImgfull-width marginFromBottom paddingFromBottom wow fadeInUp  "><img src="https://www.instadubaivisa.com/images/dubai.jpg" title="" alt="" class="" width="100%" height=""></div>
+     <div class=" column-four mobImgfull-width marginFromBottom paddingFromBottom wow fadeInUp   city-img wow fadeInUp"><div id="owl-demo" class="owl-carousel owl-theme">
+ 
+      <div class=" item" style="width:100%"><img src="./img/abudb1.jpg" alt="Abu Dhabi uae visa"></div>
+      <div class=" item"><img src="./img/abudb2.jpg" alt="Abu Dhabi tourism"></div>
+  
+    </div></div>
         </div>
-     
+        </div>
         <div  class="city-card">
-          <h3 class="row font-Weight-Normal marginFromBottom green borderFromBottom paddingFromBottom wow fadeInUp  "><strong class="black">Dubai   </strong><br/><span>- An emirate of innovative wonders</span></h3>
-          
-          <div class=" column-four mobImgfull-width marginFromBottom paddingFromBottom wow fadeInUp  "><img src="https://www.instadubaivisa.com/images/abu-dhabi.jpg" title="" alt="" class="" width="100%" height=""></div>
-          <div class=" column-six paddingFromRight mobpadding-0">
-          <p class="pl wow fadeInUp  ">Dubai is the most famous state or emirate of UAE. The skyline of Dubai maps out the unrealistic achievements of this cosmopolitan. From shopping to beach activities to adventurous tasks to blooming flowers in the desert, you and your family are sure to have a spectacular holiday.  Dubai roars with luxury anthems. And at the same time it has abundant opportunities for budget travellers. The Jumeriah Mosque is the most photographed mosque in Dubai. Dancing Fountains, Burj Khalifa, Burj Al-Arab, The Dubai Mall, The Miracle Garden, IMG World of Adventures and Legoland are a few of the pit stops that Dubai has to offer. The local food with secret recipes and experienced hands makes one get lost onto the frames of sand dunes. A perfect network of local transportation and international flights makes this city contagious to visit.</p>
-          <a><button class="apply-button  wow fadeInUp  ">Apply For Dubai Visa </button></a>
+          <h3 class="row font-Weight-Normal marginFromBottom green borderFromBottom paddingFromBottom"><strong class="black">Sharjah   </strong><br/><span>- Cultural hub of UAE</span></h3>
+          <div class="city-card-inner img-left"> 
+          <div class=" column-four mobImgfull-width marginFromBottom paddingFromBottom city-img wow fadeInUp"><div id="owl-demo" class="owl-carousel owl-theme">
+ 
+            <div class=" item" style="width:100%"><img src="./img/sharjah1.jpg" alt="The Last of us"></div>
+            <div class=" item"><img src="./img/sharjah2.png" alt="GTA V"></div>
+        
+          </div></div>
+          <div class=" column-six paddingFromRight mobpadding-0  city-text">
+          <p class="pl wow fadeInUp  ">The very conservative Sharjah expects you to survive without beer for 2-3 days so that it can enrich you with its heritage abundance. UNESCO has declared Sharjah Capital of Islamic Culture. Sharjah Heritage Area and Mleiha Archeological site are the best examples of heritage restoration. A drive by a rental or shuttle service from Dubai is a good option to reach Sharjah. A row of cannons welcomes visitors at the spectacular Sharjah Fort. And your kids can have a fun time at Al Qasba too. You should visit The Rain Room in Sharjah to know how can you remain dry in the rain. Calligraphy enthusiasts can have their best time at Sharjah Calligraphy Museum and eL Seed Calligraffiti.</p>
+          <a><button class="apply-button wow fadeInUp  ">Apply For Sharjah Visa </button></a>
         </div>
-       
+      </div>
         
           
           </div>
         <div class=" city-card">
-        <div>
-          <h3 class="row font-Weight-Normal marginFromBottom green borderFromBottom paddingFromBottom wow fadeInUp  "><strong class="black">Ajman</strong><br/><span>- A pearly visit</span></h3>
-          <div class=" column-six paddingFromRight mobpadding-0">
-          <p class="pr wow fadeInUp  " > Being the smallest emirate of UAE, Ajman is truly synonymous with its prime trade- pearl diving. You can opt for beach relaxation and beach activities. Ajman has excellent shopping centres to attract tourists. Beaches of Ajman are the cleanest of the lot in UAE.  Along with that, Ajman Fort, Mowaihat Archeological site, Ajman Museum, Etisalat Tower, Dhow Building Yard of Ajman and Sheikh Zayed Mosque are some of the halts which would attract you to the slow-paced emirate. But your visit is incomplete without pearl diving sessions.</p>
+     
+          <h3 class="row font-Weight-Normal marginFromBottom green borderFromBottom paddingFromBottom wow fadeInUp   "><strong class="black">Ajman  </strong><br/><span>- A pearly visit</span></h3>
           
-<a><button class="apply-button  wow fadeInUp  ">Apply For Ajman Visa </button></a>        </div>
+          <div class="city-card-inner img-right">
+          <div class=" column-six paddingFromRight mobpadding-0 wow fadeInUp   city-text">
+          <p class="pr">Being the smallest emirate of UAE, Ajman is truly synonymous with its prime trade- pearl diving. You can opt for beach relaxation and beach activities. Ajman has excellent shopping centres to attract tourists. Beaches of Ajman are the cleanest of the lot in UAE. Along with that, Ajman Fort, Mowaihat Archeological site, Ajman Museum, Etisalat Tower, Dhow Building Yard of Ajman and Sheikh Zayed Mosque are some of the halts which would attract you to the slow-paced emirate. But your visit is incomplete without pearl diving sessions.</p>
           
-          <div class=" column-four mobImgfull-width marginFromBottom paddingFromBottom wow fadeInUp  "><img src="https://www.instadubaivisa.com/images/ajman.jpg"  title="" alt="" class="" width="100%" height=""></div>
+<a><button class="apply-button  wow fadeInUp  ">Apply For Ajman Visa</button></a>   
+     </div>
+     <div class=" column-four mobImgfull-width marginFromBottom paddingFromBottom wow fadeInUp   city-img"><div id="owl-demo" class="owl-carousel owl-theme">
+ 
+      <div class=" item" style="width:100%"><img src="./img/ajman1.jpg" alt="ajman uae visa"></div>
+      <div class=" item"><img src="./img/ajman2.jpeg" alt="ajman visa"></div>
+  
+    </div></div>
         </div>
+        </div><div  class="city-card">
+          <h3 class="row font-Weight-Normal marginFromBottom green borderFromBottom paddingFromBottom"><strong class="black">Umm Al-Quwain   </strong><br/><span>- Nature’s basket in desert</span></h3>
+          <div class="city-card-inner img-left"> 
+          <div class=" column-four mobImgfull-width marginFromBottom paddingFromBottom city-img wow fadeInUpv "><div id="owl-demo" class="owl-carousel owl-theme">
+ 
+            <div class=" item" style="width:100%"><img src="./img/umm1.jpg" alt="The Last of us"></div>
+            <div class=" item"><img src="./img/umm2.jpg" alt="GTA V"></div>
+        
+          </div></div>
+          <div class=" column-six paddingFromRight mobpadding-0 city-text">
+          <p class="pl wow fadeInUp  ">Unlike its neighbours, this tiny emirate is blessed with lagoons those are greener than green. This emirate has a handful of well-maintained resorts. Al-Sinniyah Island is a mini natural reserve filled with mangroves engulfed with migratory birds and flamingos. The entire view of A night stroll on the isolated beaches will give you a much needed break from the bustling routine of your life. Umm AL-Quwain hosts one of the best spas of the region. Your eyeballs will roll over homes made from old bricks, ragged cafes with average interiors. Umm Al-Quwain is an upcoming destination for extreme sports with Motor Racing and Aero Clubs having their centres here.</p>
+          <a><button class="apply-button wow fadeInUp  ">Apply For Umm Al-Quwain Visa </button></a>
         </div>
-        <div  class="city-card">
-          <h3 class="row font-Weight-Normal marginFromBottom green borderFromBottom paddingFromBottom  wow fadeInUp  "><strong class="black">Dubai   </strong><br/><span>- An emirate of innovative wonders</span></h3>
-          
-          <div class=" column-four mobImgfull-width marginFromBottom paddingFromBottom  wow fadeInUp  "><img src="https://www.instadubaivisa.com/images/abu-dhabi.jpg" title="" alt="" class="" width="100%" height=""></div>
-          <div class=" column-six paddingFromRight mobpadding-0">
-          <p class="pl  wow fadeInUp  ">Dubai is the most famous state or emirate of UAE. The skyline of Dubai maps out the unrealistic achievements of this cosmopolitan. From shopping to beach activities to adventurous tasks to blooming flowers in the desert, you and your family are sure to have a spectacular holiday.  Dubai roars with luxury anthems. And at the same time it has abundant opportunities for budget travellers. The Jumeriah Mosque is the most photographed mosque in Dubai. Dancing Fountains, Burj Khalifa, Burj Al-Arab, The Dubai Mall, The Miracle Garden, IMG World of Adventures and Legoland are a few of the pit stops that Dubai has to offer. The local food with secret recipes and experienced hands makes one get lost onto the frames of sand dunes. A perfect network of local transportation and international flights makes this city contagious to visit.</p>
-          <a><button class="apply-button  wow fadeInUp  ">Apply For Dubai Visa </button></a>
-        </div>
-       
+      </div>
         
           
           </div>
         <div class=" city-card">
-          <h3 class="row font-Weight-Normal marginFromBottom green borderFromBottom paddingFromBottom  wow fadeInUp  "><strong class="black">Ras Al-Khaimah</strong><br/><span>- Mesmerising scenic beauty</span></h3>
-          <div class=" column-six paddingFromRight mobpadding-0">
-          <p class="pr  wow fadeInUp  ">Hajar Mountains guard the most scenic emirate of UAE- Ras Al-Khaimah. A sunrise road trip from Dubai is the best way to enjoy this emirate. Gradient blue waters filled with high adrenaline activities- this is just the perfect break you need.  Sun-baked deserts accompanied by desert activities are a must-to-go for. The pinnacle of development in Ras Al-Khaimah is the longest zipline in the world built on Jebel Jais mountains. The Bedouin camps in the deserts of Ras Al-Khaimah will be a wonderful experience with Arabian music and rich and authentic Arabic food. </p>
+     
+          <h3 class="row font-Weight-Normal marginFromBottom green borderFromBottom paddingFromBottom wow fadeInUp   "><strong class="black">Ras Al-Khaimah </strong><br/><span>-Mesmerising scenic beauty</span></h3>
           
-<a><button class="apply-button  wow fadeInUp  ">Apply For Ras Al-Khaimah Visa </button></a>        </div>
+          <div class="city-card-inner img-right">
+          <div class=" column-six paddingFromRight mobpadding-0 wow fadeInUp  city-text">
+          <p class="pr">Hajar Mountains guard the most scenic emirate of UAE- Ras Al-Khaimah. A sunrise road trip from Dubai is the best way to enjoy this emirate. Gradient blue waters filled with high adrenaline activities- this is just the perfect break you need. Sun-baked deserts accompanied by desert activities are a must-to-go for. The pinnacle of development in Ras Al-Khaimah is the longest zipline in the world built on Jebel Jais mountains. The Bedouin camps in the deserts of Ras Al-Khaimah will be a wonderful experience with Arabian music and rich and authentic Arabic food.</p>
           
-          <div class=" column-four mobImgfull-width marginFromBottom paddingFromBottom  wow fadeInUp  "><img src="https://www.instadubaivisa.com/images/ras.jpg" title="" alt="" class="" width="100%" height=""></div>
+<a><button class="apply-button  wow fadeInUp  ">Apply For Ras Al-Khaimah Visa</button></a>   
+     </div>
+     <div class=" column-four mobImgfull-width marginFromBottom paddingFromBottom wow fadeInUp   city-img"><div id="owl-demo" class="owl-carousel owl-theme">
+ 
+      <div class=" item" style="width:100%"><img src="./img/ras1.jpg" alt="Ras Al-Khaimah"></div>
+      <div class=" item"><img src="./img/ras2.jpg" alt="Ras Al-Khaimah tour"></div>
+  
+    </div></div>
         </div>
-        <div  class="city-card">
-          <h3 class="row font-Weight-Normal marginFromBottom green borderFromBottom paddingFromBottom  wow fadeInUp  "><strong class="black">Dubai   </strong><br/><span>- An emirate of innovative wonders</span></h3>
-          
-          <div class=" column-four mobImgfull-width marginFromBottom paddingFromBottom  wow fadeInUp  "><img src="https://www.instadubaivisa.com/images/abu-dhabi.jpg" title="" alt="" class="" width="100%" height=""></div>
+        </div><div  class="city-card ">
+          <h3 class="row font-Weight-Normal marginFromBottom green borderFromBottom paddingFromBottom"><strong class="black">Fujairah   </strong><br/><span>- Perfect destination for marine world lovers</span></h3>
+          <div class="city-card-inner img-left"> 
+          <div class=" column-four mobImgfull-width marginFromBottom paddingFromBottom  city-img"><div id="owl-demo" class="owl-carousel owl-theme">
+ 
+            <div class=" item" style="width:100%"><img src="./img/fujairah1.jpg" alt="Fujairah Visa"></div>
+            <div class=" item"><img src="./img/fujairah2.jpg" alt="Fujairah tour"></div>
+        
+          </div></div>
           <div class=" column-six paddingFromRight mobpadding-0">
-          <p class="pl">Dubai is the most famous state or emirate of UAE. The skyline of Dubai maps out the unrealistic achievements of this cosmopolitan. From shopping to beach activities to adventurous tasks to blooming flowers in the desert, you and your family are sure to have a spectacular holiday.  Dubai roars with luxury anthems. And at the same time it has abundant opportunities for budget travellers. The Jumeriah Mosque is the most photographed mosque in Dubai. Dancing Fountains, Burj Khalifa, Burj Al-Arab, The Dubai Mall, The Miracle Garden, IMG World of Adventures and Legoland are a few of the pit stops that Dubai has to offer. The local food with secret recipes and experienced hands makes one get lost onto the frames of sand dunes. A perfect network of local transportation and international flights makes this city contagious to visit.</p>
-          <a><button class="apply-button  wow fadeInUp  ">Apply For Dubai Visa </button></a>
+          <p class="pl wow fadeInUp  city-text">Fujairah is a blessed grid of archaeological sites, history, culture, mountain ranges and a magnetic coastline. This emirate has raw beauty of pristine beaches and rugged mountains. Ain Al-Gamura, Ain Al-Madhab and Al- Bidyah are the main tourist attractions. Grand Mosque, Fujairah Fort, Fujairah Museum and Fujairah Heritage Village give you the bonafide of its culture and traditions. Snoopy Island and Dibba are favourite attractions for marine life explorers. Travellers or visitors who love to hit the road, a road trip to Hajar mountains is a must that will unwind you to contentment.</p>
+          <a><button class="apply-button wow fadeInUp  ">Apply For Fujairah Visa</button></a>
         </div>
-       
+      </div>
         
           
           </div>
      
-         
-          
-          
-          
-          </div>
           <div class=" Uae-info-block">
           <div class=" uaeInfo  wow fadeInUp  "  style="text-shadow: 1px 1px 2px #000;">
           <h3 class="row marginFromBottom white font-Weight-Normal ">UAE Information</h3>
@@ -213,7 +283,7 @@
           
           
           </div>
-          
+        </div>
       
 
         <footer _ngcontent-c0="" _nghost-c3="" class="footer-main">
@@ -259,39 +329,44 @@
           </section>
         </footer>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
-$(document).ready(function() {
- 
- $("#owl-demo").owlCarousel({
+var slideIndex = 0;
+showSlides();
 
-     navigation : false, // Show next and prev buttons
-      autoPlay: true,
-     slideSpeed : 300,
-     paginationSpeed : 200,
-     goToFirst :	true,
-     items : 1, 
-     itemsDesktop : false,
-     itemsDesktopSmall : false,
-     itemsTablet: false,
-     itemsMobile : false
-
- });
- $("#owl-2").owlCarousel({
-
-navigation : false, // Show next and prev buttons
- autoPlay: true,
-slideSpeed : 300,
-paginationSpeed : 200,
-goToFirst :	true,
-items : 1, 
-itemsDesktop : false,
-itemsDesktopSmall : false,
-itemsTablet: false,
-itemsMobile : false
-
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+<script src="./assest/slider/dist/owl.carousel.min.js"></script>
+<script>
+var owl = $('.owl-carousel');
+owl.owlCarousel({
+    items:1,
+    loop:true,
+    autoplay:true,
+    autoplayTimeout:1000,
+    autoplayHoverPause:true
 });
-
-});
+$('.play').on('click',function(){
+    owl.trigger('play.owl.autoplay',[1000])
+})
+$('.stop').on('click',function(){
+    owl.trigger('stop.owl.autoplay')
+})
 </script>
 <script> 
   let header = document.getElementById("top-header");
@@ -307,9 +382,33 @@ const stickyHead = () => {
 }
 
 
-window.onscroll = window.onscroll = function() {stickyHead()}
+ window.onscroll = function() {stickyHead()}
 
-</script><script> function isScrolledIntoView(el) {
+
+</script>
+<script>
+
+const toggleMenu = () =>{
+  if(document.getElementById('main-nav').classList[1] === "mob-nav"){
+    document.getElementById('main-nav').classList.remove("mob-nav")
+    console.log(1)
+  }
+  else{
+    document.getElementById('main-nav').classList.add("mob-nav")
+  }
+}
+</script>
+<script>$.fn.scrollView = function () {
+  return this.each(function () {
+      $('html, body').animate({
+          scrollTop: $(this).offset().top
+      }, 1000);
+  });
+}
+$('#top').scrollView();
+
+</script>
+<script> function isScrolledIntoView(el) {
     var rect = el.getBoundingClientRect();
     var elemTop = rect.top;
     var elemBottom = rect.bottom;
