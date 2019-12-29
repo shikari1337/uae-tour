@@ -37,11 +37,10 @@ img{
 .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
    position: relative;
    width: 100%;
-   padding-right: 15px;
-   padding-left: 15px;
+ 
 }
 .footer {
-    padding: 2rem 0 2rem;
+    padding: 2rem 0rem;
     background: #B88C35 url('https://media.istockphoto.com/vectors/dubai-skyline-silhouette-black-vector-id821318144') no-repeat center top;
     position: relative;
     background-size: cover;
@@ -51,6 +50,9 @@ img{
     width: 100%;
     margin: 0 auto;
 
+ }
+ .bg-dark{
+   background-color: #343a40 !important;
  }
 
  .footer-main section{
@@ -177,22 +179,22 @@ img{
    margin-top: 0px;
    margin-bottom: 1rem;
  }
- .sub-footer[_ngcontent-c3] p[_ngcontent-c3] {
+ .sub-footer p {
    margin-bottom: 0px;}
    .mt-3, .my-3 {
       margin-top: 1rem!important;
   }
-.footer-main p {
+/* .footer-main p {
    margin-block-start: 1em;
     margin-block-end: 1em;
-}
+} */
   .footer h5{
    font-size: 1.25rem;
    margin-bottom: .5rem;
    font-weight: 500;
    line-height: 1.2;
   }
-   .footer[_ngcontent-c3] {
+   .footer {
       padding-top: 2rem;
       padding-right: 0px;
       padding-bottom: 2rem;
@@ -201,8 +203,7 @@ img{
       background-position-x: center;
       background-position-y: top;
       background-size: cover;
-      background-repeat-x: no-repeat;
-      background-repeat-y: no-repeat;
+      background-repeat: no-repeat;
       background-attachment: initial;
       background-origin: initial;
       background-clip: initial;

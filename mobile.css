@@ -86,5 +86,9 @@
 .sticky .navbar-nav {
   line-height: 1 !important;
 }
+.uaeInfo ul li span {
+ 
+  padding-top: 1% !important;
+}
 
 }
