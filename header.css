@@ -159,7 +159,7 @@ a{
     flex-basis: auto;
 }
 .navbar-brand{
-  width: 250px;
+  min-width: 250px;
 }
 /* .main-container{
   max-height: 90px;
