@@ -1,6 +1,4 @@
-*{
-   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
-}
+
  .footer-main a, .footer-main  article, .footer-main  aside, .footer-main  details,  .footer-main div, .footer-main  figcaption, .footer-main  figure, .footer-main  footer, .footer-main  h1,  .footer-main h2, .footer-main  h3,  .footer-main h4,  .footer-main h5, .footer-main  h6,  .footer-main hgroup, .footer-main  input,  .footer-main li, .footer-main  p,  .footer-main section,  .footer-main span, .footer-main  ul {
     float: none;
  }
