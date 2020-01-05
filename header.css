@@ -121,7 +121,7 @@ a{
     -ms-transition: all 0.25s !important ;
     -o-transition: all 0.25s !important ;
     -webkit-transition: all 0.25s !important ;
-    padding: 1rem  0.5rem 0 0.5rem ;
+    padding: 1rem  0.5rem 0.3rem 0.5rem ;
     display: flex !important ;
     flex-wrap: wrap !important ;
     align-items: center!important ;
@@ -145,7 +145,7 @@ a{
     
   }
   .sticky   .navbar-nav{
-  line-height: 3 !important;
+  line-height: 5 !important;
 }
 @media (max-width : 1024px ){
   .navbar-nav {
