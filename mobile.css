@@ -100,5 +100,7 @@
  
   padding-top: 1% !important;
 }
-
+.nav-item{
+  width: 100%;
+}
 }
