@@ -103,4 +103,7 @@
 .nav-item{
   width: 100%;
 }
+.nav-link {
+   line-height: 1; 
+}
 }
